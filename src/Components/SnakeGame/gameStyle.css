@@ -1,0 +1,63 @@
+.game_window{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: 50px auto;
+    border: 4px solid #3CB371;
+    background-color: black;
+}
+
+.game-container{
+    background-color: #414046;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+#score{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    width: 100px;
+    right: 5px;
+    
+}
+
+.snake_part{
+    position: absolute;
+    height: 2%;
+    width: 2%;
+    background-color: chartreuse;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.food{
+    position: absolute;
+    height: 2%;
+    width: 2%;
+    animation-name: foodColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.playBtn{
+    margin-bottom: "5px";
+    width: "60%";
+    background-color: "#F6C60B";
+}
+
+@keyframes foodColor {
+    0%   {background-color: red;}
+    10%  {background-color: yellow;}
+    20%  {background-color: blue;}
+    30% {background-color: orange;}
+    40% {background-color: pink;}
+    50% {background-color: cyan;}
+    60% {background-color: purple;}
+    70% {background-color: lightblue;}
+    80% {background-color: white;}
+    90% {background-color: greenyellow;}
+    100% {background-color: palevioletred;}
+  }

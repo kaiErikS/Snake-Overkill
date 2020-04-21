@@ -1,0 +1,13 @@
+
+#comments-container{
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 1%;
+}
+
+#make-comment-container{
+    height: 150px;
+    border: 1px solid;
+    width: 100%;
+}
