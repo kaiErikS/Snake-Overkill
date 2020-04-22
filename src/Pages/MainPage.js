@@ -27,9 +27,13 @@ class MainPage extends Component {
     };
 
     setUsername(){
-        this.setState({
-            userSet: true
-        })
+        if (this.state.userName === "") {
+            alert("Invalid username!")
+        } else {
+            this.setState({
+                userSet: true
+            });
+        };
     };
 
     render() {
